@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Logo from '../components/Logo';
 
 const links = [
   { to: '#accueil', label: 'Accueil' },
@@ -41,7 +42,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-10 border-b border-line bg-paper/90 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-        <a href="#accueil" className="font-display text-lg tracking-tight text-ink">
+        <a href="#accueil" className="flex items-center gap-2.5 font-display text-lg tracking-tight text-ink">
+          <Logo className="h-8 w-8 shrink-0" />
           Aissatou Marone
         </a>
         <nav className="hidden gap-6 text-sm sm:flex">

@@ -1,10 +1,15 @@
+import Logo from '../components/Logo';
+
 export default function Footer() {
   return (
     <footer className="border-t border-line">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="font-display text-lg text-ink">Aissatou Marone</p>
-          <p className="mt-1 text-sm text-ink/60">Développeuse backend &amp; frontend</p>
+        <div className="flex items-center gap-3">
+          <Logo className="h-11 w-11 shrink-0" />
+          <div>
+            <p className="font-display text-lg text-ink">Aissatou Marone</p>
+            <p className="mt-1 text-sm text-ink/60">Développeuse backend &amp; frontend</p>
+          </div>
         </div>
         <div className="flex flex-col gap-1 text-sm sm:items-end">
           <a href="mailto:maronea865@gmail.com" className="text-ink/70 underline underline-offset-4 hover:text-ink">
