@@ -1,6 +1,7 @@
 import { useApiGet } from '../lib/useApi';
 import NetworkMark from '../components/NetworkMark';
 import Realisations from './Realisations';
+import Github from './Github';
 import Cv from './Cv';
 import Contact from './Contact';
 
@@ -84,6 +85,9 @@ export default function Home() {
 
       <div className="border-t border-line">
         <Realisations />
+      </div>
+      <div className="border-t border-line empty:hidden">
+        <Github />
       </div>
       <div className="border-t border-line">
         <Cv />
