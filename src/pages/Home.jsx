@@ -9,7 +9,7 @@ const DEFAULT_TITRE = 'Je construis des systèmes qui mettent des gens en relati
 const DEFAULT_SOUS_TITRE =
   "Développeuse backend & frontend, je conçois des API Laravel et des interfaces React — de la logique métier jusqu'à l'écran que les gens touchent vraiment.";
 const DEFAULT_A_PROPOS =
-  "Je m'appelle Aissatou Marone. Je suis actuellement en stage chez Volkano, où j'ai développé RED Product, et en formation à AFI-UE. À côté de ça, je construis JEF CONNECT, mon projet personnel de mise en relation entre clients et travailleurs.";
+  "Je m'appelle Aissatou Marone. Je suis actuellement en stage chez Volkeno, où j'ai développé RED Product, et en formation à AFI-UE. À côté de ça, je construis JEF CONNECT, mon projet personnel de mise en relation entre clients et travailleurs.";
 
 const SERVICES_FALLBACK_ICON = '◆';
 
