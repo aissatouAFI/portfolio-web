@@ -59,7 +59,7 @@ export default function Header() {
           Aissatou Marone
         </a>
         <div className="flex items-center gap-2 sm:gap-6">
-          <nav className="hidden gap-6 text-sm md:flex">
+          <nav className="hidden gap-6 text-sm lg:flex">
             {links.map((link) => {
               const isActive = activeId === link.to.slice(1);
               return (
@@ -98,7 +98,7 @@ export default function Header() {
             aria-expanded={menuOuvert}
             aria-controls="menu-telephone"
             aria-label={menuOuvert ? 'Fermer le menu' : 'Ouvrir le menu'}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-ink md:hidden"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line text-ink transition-colors hover:border-ink lg:hidden"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="h-5 w-5" aria-hidden="true">
               {menuOuvert ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
@@ -109,7 +109,7 @@ export default function Header() {
 
       {/* Menu téléphone : la liste des sections, sous la barre du haut */}
       {menuOuvert && (
-        <nav id="menu-telephone" className="border-t border-line bg-paper motion-safe:animate-[menu-apparition_200ms_ease-out] md:hidden">
+        <nav id="menu-telephone" className="border-t border-line bg-paper motion-safe:animate-[menu-apparition_200ms_ease-out] lg:hidden">
           <ul className="mx-auto flex max-w-5xl flex-col px-6 py-2">
             {links.map((link) => {
               const isActive = activeId === link.to.slice(1);
