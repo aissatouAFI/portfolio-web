@@ -86,9 +86,9 @@ export default function Home() {
       <div className="border-t border-line">
         <Realisations />
       </div>
-      <div className="border-t border-line empty:hidden">
+      <section id="github" className="border-t border-line empty:hidden">
         <Github />
-      </div>
+      </section>
       <div className="border-t border-line">
         <Cv />
       </div>

@@ -7,6 +7,7 @@ const links = [
   { to: '#ce-que-je-fais', label: 'Ce que je fais' },
   { to: '#a-propos', label: 'À propos' },
   { to: '#realisations', label: 'Réalisations' },
+  { to: '#github', label: 'GitHub' },
   { to: '#cv', label: 'CV' },
   { to: '#contact', label: 'Contact' },
 ];
@@ -108,7 +109,7 @@ export default function Header() {
 
       {/* Menu téléphone : la liste des sections, sous la barre du haut */}
       {menuOuvert && (
-        <nav id="menu-telephone" className="border-t border-line bg-paper md:hidden">
+        <nav id="menu-telephone" className="border-t border-line bg-paper motion-safe:animate-[menu-apparition_200ms_ease-out] md:hidden">
           <ul className="mx-auto flex max-w-5xl flex-col px-6 py-2">
             {links.map((link) => {
               const isActive = activeId === link.to.slice(1);

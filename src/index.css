@@ -25,3 +25,15 @@ html {
 section[id] {
   scroll-margin-top: 84px;
 }
+
+/* Ouverture du menu téléphone : léger glissement vers le bas */
+@keyframes menu-apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

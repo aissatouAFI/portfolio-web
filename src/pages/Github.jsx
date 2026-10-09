@@ -25,7 +25,7 @@ export default function Github() {
   const totalLangages = data.langages.reduce((somme, l) => somme + l.depots, 0);
 
   return (
-    <section id="github" className="mx-auto max-w-5xl px-6 py-24">
+    <div className="mx-auto max-w-5xl px-6 py-24">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h2 className="font-display text-2xl text-ink">Mon code sur GitHub</h2>
@@ -99,6 +99,6 @@ export default function Github() {
           </a>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
