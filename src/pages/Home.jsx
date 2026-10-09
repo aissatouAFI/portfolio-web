@@ -27,16 +27,16 @@ export default function Home() {
               {profil?.titre_accroche || DEFAULT_TITRE}
             </h1>
             <p className="mt-6 max-w-xl text-ink/70">{profil?.sous_titre || DEFAULT_SOUS_TITRE}</p>
-            <div className="mt-9 flex gap-4">
+            <div className="mt-9 flex flex-wrap gap-3 sm:gap-4">
               <a
                 href="#ce-que-je-fais"
-                className="rounded-full bg-ink px-6 py-3 text-sm text-paper transition-colors hover:bg-ink/85"
+                className="rounded-full bg-ink px-6 py-3 text-sm whitespace-nowrap text-paper transition-colors hover:bg-ink/85"
               >
                 Voir ce que je fais
               </a>
               <a
                 href="#contact"
-                className="rounded-full border border-line px-6 py-3 text-sm text-ink transition-colors hover:border-ink"
+                className="rounded-full border border-line px-6 py-3 text-sm whitespace-nowrap text-ink transition-colors hover:border-ink"
               >
                 Me contacter
               </a>
