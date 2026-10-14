@@ -30,11 +30,14 @@ export default function Realisations() {
               <h3 className="font-display text-xl text-ink">{realisation.titre}</h3>
               <p className="mt-3 text-sm text-ink/70">{realisation.description}</p>
               {Array.isArray(realisation.technologies) && realisation.technologies.length > 0 && (
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {realisation.technologies.map((tech) => (
-                    <TechTag key={tech}>{tech}</TechTag>
-                  ))}
-                </div>
+                <>
+                  <p className="mt-4 text-xs font-medium text-ink/55">Technologies utilisées :</p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {realisation.technologies.map((tech) => (
+                      <TechTag key={tech}>{tech}</TechTag>
+                    ))}
+                  </div>
+                </>
               )}
               {(realisation.lien_demo || realisation.lien_github) && (
                 <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
